@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBroadcastSendBtnClicked(View v){
         Intent i = new Intent();
-        i.setAction("com.idnp.lab04");
-        i.setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+        i.setAction("com.idnp.lab04.MY_MESSAGE");
+       //i.setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
         i.putExtra("msg", inputMessage.getText().toString());
         sendBroadcast(i);
     }
